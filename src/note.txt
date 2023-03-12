@@ -1,0 +1,10 @@
+we need to define the routing between modules
+
+then create structure
+
+
+- the @NgModule in app-routing.module.ts will be loaded by default, it's eager loading, written as forRoot(routes), they will be loaded in advance. And if the other routes are recorded in this file,
+    they will be loaded too, so if we do not want to load other routes automatically, we need to declare lazy loading for other routes in this file, they will only be loaded
+    when being called, and it's written as forChild(routes)
+
+    
